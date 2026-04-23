@@ -4,7 +4,7 @@ import { MessageCircle } from "lucide-react";
 import { useLang } from "@/context/LanguageContext";
 import { content } from "@/lib/content";
 
-const WA_NUMBER = "573000000000";
+const WA_NUMBER = "573046537134";
 const WA_MESSAGE_ES = "Hola! Me gustaría saber más sobre La Guaca Hostel";
 const WA_MESSAGE_EN = "Hi! I'd like to know more about La Guaca Hostel";
 

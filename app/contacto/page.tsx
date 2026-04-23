@@ -5,7 +5,7 @@ import { useState } from "react";
 import { MessageCircle, Mail, Phone, MapPin, ChevronDown, ChevronUp, Send } from "lucide-react";
 import { useLang } from "@/context/LanguageContext";
 
-const WA_NUMBER = "573000000000";
+const WA_NUMBER = "573046537134";
 
 const faqs = {
   es: [
@@ -166,20 +166,20 @@ export default function ContactoPage() {
                 <MessageCircle size={22} className="text-[#25D366]" />
                 <div>
                   <p className="font-syne font-semibold text-grafito text-sm">WhatsApp</p>
-                  <p className="font-inter text-xs text-grafito-muted">+57 300 000 0000</p>
+                  <p className="font-inter text-xs text-grafito-muted">+57 304 653 7134</p>
                 </div>
                 <span className="ml-auto font-inter text-xs text-[#25D366] font-semibold group-hover:underline">
                   {lang === "es" ? "Escribir" : "Chat"}
                 </span>
               </a>
               <a
-                href="mailto:hola@laguacahostel.com"
+                href="mailto:ekuairasas@gmail.com"
                 className="flex items-center gap-4 bg-white border border-crema-dark rounded-card p-4 hover:border-terracota transition-colors group"
               >
                 <Mail size={22} className="text-terracota" />
                 <div>
                   <p className="font-syne font-semibold text-grafito text-sm">Email</p>
-                  <p className="font-inter text-xs text-grafito-muted">hola@laguacahostel.com</p>
+                  <p className="font-inter text-xs text-grafito-muted">ekuairasas@gmail.com</p>
                 </div>
                 <span className="ml-auto font-inter text-xs text-terracota font-semibold group-hover:underline">
                   {lang === "es" ? "Escribir" : "Write"}

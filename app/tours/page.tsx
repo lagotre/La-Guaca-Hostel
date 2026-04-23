@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Clock, Zap, MessageCircle, ChevronRight } from "lucide-react";
 import { useLang } from "@/context/LanguageContext";
 
-const WA_NUMBER = "573000000000";
+const WA_NUMBER = "573046537134";
 
 const tours = {
   es: [

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Users, Check, ChevronRight } from "lucide-react";
 import { useLang } from "@/context/LanguageContext";
 
-const BOOK_URL = "https://app.lobbypms.com/booking/la-guaca-hostel";
+const BOOK_URL = "https://engine.lobbypms.com/la-guaca-hostel";
 
 const rooms = {
   es: [

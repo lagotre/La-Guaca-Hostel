@@ -22,8 +22,8 @@ import {
 import { useLang } from "@/context/LanguageContext";
 import { content } from "@/lib/content";
 
-const BOOK_URL = "https://app.lobbypms.com/booking/la-guaca-hostel";
-const WA_NUMBER = "573000000000";
+const BOOK_URL = "https://engine.lobbypms.com/la-guaca-hostel";
+const WA_NUMBER = "573046537134";
 
 const ICON_MAP: Record<string, React.ElementType> = {
   MapPin,

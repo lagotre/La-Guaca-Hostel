@@ -6,7 +6,7 @@ import { Menu, X } from "lucide-react";
 import { useLang } from "@/context/LanguageContext";
 import { content } from "@/lib/content";
 
-const BOOK_URL = "https://app.lobbypms.com/booking/la-guaca-hostel";
+const BOOK_URL = "https://engine.lobbypms.com/la-guaca-hostel";
 
 export default function Navbar() {
   const { lang, toggle } = useLang();
