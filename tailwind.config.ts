@@ -37,6 +37,8 @@ const config: Config = {
       fontFamily: {
         syne: ["var(--font-syne)", "sans-serif"],
         inter: ["var(--font-inter)", "sans-serif"],
+        raleway: ["var(--font-syne)", "sans-serif"],
+        lato: ["var(--font-inter)", "sans-serif"],
       },
       borderRadius: {
         card: "10px",

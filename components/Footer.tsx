@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react";
 import { useLang } from "@/context/LanguageContext";
 import { content } from "@/lib/content";
@@ -18,9 +19,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <p className="font-syne font-bold text-2xl mb-3">
-              La Guaca<span className="text-terracota"> Hostel</span>
-            </p>
+            <Link href="/" className="inline-block mb-3">
+              <Image
+                src="/logo-cuadrado.png"
+                alt="La Guaca Hostel"
+                width={120}
+                height={120}
+                className="w-28 h-auto object-contain"
+              />
+            </Link>
             <p className="font-inter text-sm text-white/60 leading-relaxed mb-5">
               {lang === "es"
                 ? "Tu base en el Caribe colombiano. Donde cada viaje comienza."
@@ -78,7 +85,7 @@ export default function Footer() {
               {lang === "es" ? "Destinos" : "Destinations"}
             </p>
             <ul className="space-y-2">
-              {["Parque Tayrona", "Minca", "Ciudad Perdida", "Taganga", "Playa Blanca"].map(
+              {["Parque Tayrona", "Playa Cristal", "Minca", "Ciudad Perdida", "Buceo PADI", "Velero Tayrona"].map(
                 (d) => (
                   <li key={d}>
                     <Link

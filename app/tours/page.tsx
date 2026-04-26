@@ -11,164 +11,254 @@ const tours = {
     {
       id: "tayrona",
       name: "Parque Nacional Tayrona",
-      tagline: "Jungla + playa en un día épico",
+      tagline: "Selva, playas y vida salvaje — disponible todos los días",
       description:
-        "El Parque Tayrona es lo que imaginas cuando piensas en el Caribe colombiano. Selva tropical que cae directo al mar, playas de arena blanca rodeadas de palmeras y ruinas indígenas entre los árboles. El acceso más popular es por Calabazo o por El Zaino. Nosotros te organizamos el transporte y el ingreso.",
+        "El Parque Tayrona es lo que imaginas cuando piensas en el Caribe colombiano: selva tropical que cae directo al mar, playas de arena blanca y fauna increíble. Nuestro tour incluye transporte ida y vuelta en minibús, entrada al parque, seguro y guía bilingüe. Sin estrés, sin complicaciones.",
       duration: "1 día",
       difficulty: "Moderado",
       distance: "45 km de Santa Marta",
-      price: "COP 120.000",
-      priceNote: "Incluye transporte + entrada + guía",
+      price: "COP 230.000",
+      priceNote: "Transporte + entrada + seguro + guía. Almuerzo no incluido.",
       img: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&auto=format&fit=crop&q=80",
-      highlights: ["Playa Cristal", "Playas Arrecifes", "Cañaveral", "Fauna y flora tropical"],
-      tip: "Lleva protector solar, agua y ropa que puedas mojar. Cero wi-fi — y eso es bueno.",
+      highlights: ["Transporte ida y vuelta", "Entrada + seguro incluidos", "Guía español/inglés", "Disponible todos los días"],
+      tip: "Lleva protector solar, agua y ropa que puedas mojar. Hay restaurantes en el parque para el almuerzo.",
+    },
+    {
+      id: "playa-cristal",
+      name: "Playa Cristal",
+      tagline: "El mejor punto de snorkel del Caribe colombiano",
+      description:
+        "Playa Cristal es una de las playas más bonitas del Parque Tayrona — aguas cristalinas, arrecifes de coral y mucha vida marina. El acceso es en lancha rápida desde la costa. Ideal para snorkel y para nadar en aguas tranquilas. El transporte va en minibús hasta el punto de embarque.",
+      duration: "1 día",
+      difficulty: "Fácil",
+      distance: "Parque Tayrona",
+      price: "COP 195.000",
+      priceNote: "Transporte + entrada + seguro + lancha rápida. Almuerzo no incluido.",
+      img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
+      highlights: ["Minibús ida y vuelta", "Entrada + seguro", "Lancha rápida a la playa", "Punto de snorkel incluido"],
+      tip: "Lleva snorkel si tienes el tuyo. El agua es tranquila y perfecta para nadar.",
+    },
+    {
+      id: "bahia-concha",
+      name: "Bahía Concha",
+      tagline: "Playa tranquila dentro del Parque Tayrona",
+      description:
+        "Bahía Concha es una de las playas más accesibles del Parque Tayrona — perfecta para un día relajado sin caminatas largas. Aguas calmas y cristalinas ideales para nadar y hacer snorkel. El precio más accesible de nuestros tours de playa y una opción excelente si es tu primera vez en Tayrona.",
+      duration: "1 día",
+      difficulty: "Fácil",
+      distance: "Parque Tayrona",
+      price: "COP 80.000",
+      priceNote: "Transporte + seguro incluidos. Almuerzo no incluido.",
+      img: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&auto=format&fit=crop&q=80",
+      highlights: ["Transporte ida y vuelta", "Seguro incluido", "Aguas tranquilas para nadar", "Snorkel y descanso"],
+      tip: "La opción más económica para ver el Parque Tayrona. Lleva tu almuerzo o cómpralo en la playa.",
+    },
+    {
+      id: "playa-cinto",
+      name: "Playa Cinto — Virgin Beach",
+      tagline: "Playa virgen sin masas turísticas",
+      description:
+        "Playa Cinto es una de las playas más remotas y prístinas de la costa caribeña. El acceso es en lancha rápida, lo que significa que solo llegan quienes saben buscarla. Arena blanca, aguas turquesas y una tranquilidad que ya no es fácil de encontrar. Un secreto que vale la pena conocer.",
+      duration: "1 día",
+      difficulty: "Fácil",
+      distance: "Costa Caribe — acceso en lancha",
+      price: "COP 200.000",
+      priceNote: "Transporte + seguro + lancha incluidos. Almuerzo no incluido.",
+      img: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&auto=format&fit=crop&q=80",
+      highlights: ["Transporte ida y vuelta", "Seguro incluido", "Lancha rápida a la playa", "Playa sin aglomeraciones"],
+      tip: "Lleva tu propio almuerzo y suficiente agua. No hay tiendas ni restaurantes en la playa.",
     },
     {
       id: "minca",
-      name: "Minca — El pueblo de la montaña",
-      tagline: "Cascadas, cafetales y aire fresco",
+      name: "Minca — Tour Día Completo",
+      tagline: "Cascadas, cafetales, chocolate y aves",
       description:
-        "A solo 45 min de Santa Marta, Minca es el antídoto perfecto al calor caribeño. Pueblo hippie, relajado y sin ruido. Puedes ir un día y volver, o quedarte a dormir entre los cafetales. Las cascadas de Pozo Azul y La Victoria son obligatorias. También hay avistamiento de aves épico si madrugas.",
-      duration: "1-2 días",
+        "Minca es el antídoto perfecto al calor caribeño. Nuestro tour de día completo incluye visita a la cascada escondida con baño incluido, taller de chocolate artesanal, recorrido por la finca cafetera para aprender los secretos del cultivo tradicional, visita a una casa de bambú y avistamiento de aves. Y para rematar: almuerzo gourmet incluido.",
+      duration: "1 día completo",
       difficulty: "Fácil",
       distance: "20 km de Santa Marta",
-      price: "COP 80.000",
-      priceNote: "Incluye transporte ida y vuelta",
+      price: "COP 195.000",
+      priceNote: "Transporte + almuerzo gourmet incluidos.",
       img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&auto=format&fit=crop&q=80",
-      highlights: ["Cascada Pozo Azul", "Fincas cafeteras", "Avistamiento de aves", "Vista panorámica"],
-      tip: "Si te quedas a dormir, hay cabañas desde USD 15. Avísanos y lo coordinamos.",
+      highlights: ["Cascada escondida con baño", "Taller de chocolate artesanal", "Recorrido finca cafetera", "Avistamiento de aves"],
+      tip: "Uno de nuestros tours más completos y con mejor relación precio-experiencia. El almuerzo gourmet es una sorpresa.",
+    },
+    {
+      id: "velero-tayrona",
+      name: "Velero por Tayrona Beach",
+      tagline: "Navega el Caribe con paddle board y snorkel incluido",
+      description:
+        "Una forma diferente y espectacular de ver el Parque Tayrona: desde el mar. Zarparás desde La Marina en un velero con todo incluido — agua, frutas, snacks, almuerzo, equipo de paddle board y snorkel. La ruta pasa por Bahía Concha y las playas del parque. El atardecer desde cubierta es irrepetible.",
+      duration: "1 día",
+      difficulty: "Fácil",
+      distance: "Sale desde La Marina",
+      price: "COP 236.000",
+      priceNote: "Almuerzo + agua + frutas + snorkel + paddle board incluidos. Taxi a La Marina no incluido.",
+      img: "https://images.unsplash.com/photo-1439405326-8b4278be4485?w=1200&auto=format&fit=crop&q=80",
+      highlights: ["Navegación en velero", "Bahía Concha desde el mar", "Paddle board + snorkel", "Almuerzo + snacks incluidos"],
+      tip: "El taxi desde el hostal hasta La Marina cuesta aproximadamente COP 15.000. Coordínalo con nosotros.",
+    },
+    {
+      id: "buceo",
+      name: "Buceo PADI",
+      tagline: "Dos inmersiones con instructor certificado bilingüe",
+      description:
+        "Sumérgete en el Caribe colombiano con un instructor PADI certificado y bilingüe. El tour incluye dos inmersiones a máximo 9 metros de profundidad, equipo completo, transporte en lancha desde La Marina, agua, snack y fotos bajo el agua. Grupos pequeños para una experiencia más personal y segura.",
+      duration: "Medio día",
+      difficulty: "Moderado",
+      distance: "Sale desde La Marina",
+      price: "COP 230.000",
+      priceNote: "Fundive (2 inmersiones). Minicurso PADI: COP 280.000. Entrada a La Marina (COP 11.000) no incluida.",
+      img: "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=1200&auto=format&fit=crop&q=80",
+      highlights: ["2 inmersiones (máx. 9 metros)", "Equipo de buceo incluido", "Instructor PADI bilingüe", "Fotos bajo el agua"],
+      tip: "No necesitas experiencia previa para el Fundive. Para el Minicurso PADI recibirás tu certificación.",
     },
     {
       id: "ciudad-perdida",
       name: "Ciudad Perdida — El Trek Legendario",
-      tagline: "4 a 6 días en la selva de la Sierra Nevada",
+      tagline: "4 o 5 días en la selva de la Sierra Nevada",
       description:
-        "Una de las experiencias más épicas de Sudamérica. Caminar 4-6 días por selva cerrada hasta llegar a la ciudad indígena Teyuna, construida hace más de 650 años. Solo los fuertes llegan — y vale cada paso. Se puede hacer solo con operadores autorizados. Nosotros te conectamos con la agencia de confianza.",
-      duration: "4-6 días",
+        "Una de las experiencias más épicas de Sudamérica. Caminar 4 o 5 días por selva cerrada hasta llegar a la ciudad indígena Teyuna, construida hace más de 650 años. El precio incluye absolutamente todo: transporte al inicio del trek, alojamiento en camas con mosquitero, todas las comidas (opción vegana/vegetariana disponible), agua purificada, frutas, snacks y guía bilingüe.",
+      duration: "4 o 5 días",
       difficulty: "Difícil",
       distance: "Sierra Nevada de Santa Marta",
-      price: "COP 1.200.000",
-      priceNote: "Todo incluido (guías, comidas, camping)",
+      price: "COP 2.150.000",
+      priceNote: "Todo incluido: transporte, alojamiento, comidas, agua, guía bilingüe.",
       img: "https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=1200&auto=format&fit=crop&q=80",
       highlights: [
-        "Ciudad Teyuna (650 años de historia)",
-        "Trek por selva virgen",
-        "Ríos y cascadas en el camino",
-        "Comunidades indígenas Kogi",
+        "Ciudad Teyuna (más de 650 años)",
+        "Alojamiento + todas las comidas",
+        "Agua purificada + snacks",
+        "Guía bilingüe certificado",
       ],
-      tip: "Necesitas estar en buena condición física. No es apto para todos. Consulta antes de reservar.",
-    },
-    {
-      id: "taganga",
-      name: "Taganga — Buceo y Atardecer",
-      tagline: "Pueblo de pescadores con vistas increíbles",
-      description:
-        "A 15 min de Santa Marta, Taganga es un pueblito de pescadores famoso por su buceo accesible y económico. La bahía es tranquila, el pescado es fresco y el atardecer sobre el Caribe es de los más bonitos de la costa. También hay kayak y snorkel.",
-      duration: "Medio día — día completo",
-      difficulty: "Fácil",
-      distance: "4 km de Santa Marta",
-      price: "COP 50.000",
-      priceNote: "Transporte + snorkel básico",
-      img: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&auto=format&fit=crop&q=80",
-      highlights: ["Buceo de bautismo", "Snorkel", "Kayak", "Pescado fresco al atardecer"],
-      tip: "Si quieres sacar licencia de buceo, Taganga es uno de los lugares más baratos del mundo para hacerlo.",
-    },
-    {
-      id: "playa-blanca",
-      name: "Playa Blanca — Paraíso sin filtros",
-      tagline: "Aguas turquesas y arena blanca de película",
-      description:
-        "La joya del Caribe samario. Aguas cristalinas entre azul y verde, arena blanca y un ambiente relajado que invita a quedarse. Se llega en lancha desde Taganga o en tour organizado. Perfecto para un día sin planear nada — solo playa, sol y chicha fría.",
-      duration: "1 día",
-      difficulty: "Fácil",
-      distance: "Acceso en lancha desde Taganga",
-      price: "COP 100.000",
-      priceNote: "Transporte + lancha incluidos",
-      img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
-      highlights: ["Aguas turquesas", "Arena blanca", "Snorkel", "Ambiente tranquilo"],
-      tip: "Lleva tu propio almuerzo o cómprate un pescado a la brasa en el puesto local. Mucho más rico y económico.",
+      tip: "Opción vegana y vegetariana disponible. Necesitas buena condición física — consulta con nosotros antes de reservar.",
     },
   ],
   en: [
     {
       id: "tayrona",
-      name: "Tayrona National Park",
-      tagline: "Jungle + beach in one epic day",
+      name: "Tayrona National Park Tour",
+      tagline: "Jungle, beaches and wildlife — available every day",
       description:
-        "Tayrona Park is exactly what you imagine when you think of the Colombian Caribbean. Tropical jungle falling directly into the sea, white sand beaches surrounded by palms and indigenous ruins among the trees. We organize transport and entry for you.",
+        "Tayrona Park is exactly what you imagine when you think of the Colombian Caribbean: tropical jungle falling into the sea, white sand beaches and incredible wildlife. Our tour includes round-trip transport by minibus, park entrance, insurance and a bilingual guide. Stress-free, hassle-free.",
       duration: "1 day",
       difficulty: "Moderate",
       distance: "45 km from Santa Marta",
-      price: "COP 120,000",
-      priceNote: "Includes transport + entrance + guide",
+      price: "COP 230,000",
+      priceNote: "Transport + entrance + insurance + guide. Lunch not included.",
       img: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&auto=format&fit=crop&q=80",
-      highlights: ["Playa Cristal", "Arrecifes Beach", "Cañaveral", "Tropical flora & fauna"],
-      tip: "Bring sunscreen, water and clothes you can get wet. Zero wi-fi — and that's a good thing.",
+      highlights: ["Round-trip transport", "Entrance + insurance included", "Spanish/English guide", "Available every day"],
+      tip: "Bring sunscreen, water and clothes you can get wet. There are restaurants inside the park for lunch.",
+    },
+    {
+      id: "playa-cristal",
+      name: "Playa Cristal",
+      tagline: "The best snorkel spot on the Colombian Caribbean",
+      description:
+        "Playa Cristal is one of the most beautiful beaches in Tayrona Park — crystal clear water, coral reefs and plenty of marine life. Access is by speedboat from the coast. Perfect for snorkeling and swimming in calm waters. Transport goes by minibus to the boarding point.",
+      duration: "1 day",
+      difficulty: "Easy",
+      distance: "Tayrona National Park",
+      price: "COP 195,000",
+      priceNote: "Transport + entrance + insurance + speedboat. Lunch not included.",
+      img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
+      highlights: ["Round-trip minibus", "Entrance + insurance", "Speedboat to the beach", "Snorkel point included"],
+      tip: "Bring your own snorkel if you have one. The water is calm and perfect for swimming.",
+    },
+    {
+      id: "bahia-concha",
+      name: "Bahía Concha",
+      tagline: "Calm beach inside Tayrona National Park",
+      description:
+        "Bahía Concha is one of the most accessible beaches in Tayrona Park — perfect for a relaxed day without long hikes. Calm, crystal clear waters ideal for swimming and snorkeling. The most affordable of our beach tours and a great option if it's your first time in Tayrona.",
+      duration: "1 day",
+      difficulty: "Easy",
+      distance: "Tayrona National Park",
+      price: "COP 80,000",
+      priceNote: "Transport + insurance included. Lunch not included.",
+      img: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&auto=format&fit=crop&q=80",
+      highlights: ["Round-trip transport", "Insurance included", "Calm waters for swimming", "Snorkeling & relaxing"],
+      tip: "The most affordable way to visit Tayrona. Bring your lunch or buy it on the beach.",
+    },
+    {
+      id: "playa-cinto",
+      name: "Playa Cinto — Virgin Beach",
+      tagline: "Remote virgin beach away from the crowds",
+      description:
+        "Playa Cinto is one of the most pristine and remote beaches on the Caribbean coast. Access is by speedboat, which means only those who know where to look make it here. White sand, turquoise waters and a peace that's getting hard to find. A secret worth knowing.",
+      duration: "1 day",
+      difficulty: "Easy",
+      distance: "Caribbean coast — boat access",
+      price: "COP 200,000",
+      priceNote: "Transport + insurance + speedboat included. Lunch not included.",
+      img: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&auto=format&fit=crop&q=80",
+      highlights: ["Round-trip transport", "Insurance included", "Speedboat to the beach", "Uncrowded virgin beach"],
+      tip: "Bring your own lunch and plenty of water. No shops or restaurants at the beach.",
     },
     {
       id: "minca",
-      name: "Minca — The Mountain Village",
-      tagline: "Waterfalls, coffee farms and fresh air",
+      name: "Minca — Full Day Tour",
+      tagline: "Waterfalls, coffee, chocolate and birdwatching",
       description:
-        "Just 45 min from Santa Marta, Minca is the perfect antidote to Caribbean heat. A hippie, relaxed and quiet village. You can go for a day and come back, or stay overnight among the coffee farms. The Pozo Azul and La Victoria waterfalls are a must. Epic birdwatching too if you're an early riser.",
-      duration: "1-2 days",
+        "Minca is the perfect antidote to Caribbean heat. Our full day tour includes a visit to the hidden waterfall with a refreshing swim, a hands-on chocolate-making workshop, a tour of the coffee farm to learn traditional farming secrets, a visit to a bamboo house, birdwatching — and a gourmet lunch included.",
+      duration: "Full day",
       difficulty: "Easy",
       distance: "20 km from Santa Marta",
-      price: "COP 80,000",
-      priceNote: "Includes return transport",
+      price: "COP 195,000",
+      priceNote: "Round-trip transport + gourmet lunch included.",
       img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&auto=format&fit=crop&q=80",
-      highlights: ["Pozo Azul Waterfall", "Coffee farms", "Birdwatching", "Panoramic views"],
-      tip: "If you stay overnight, there are cabins from USD 15. Let us know and we'll coordinate it.",
+      highlights: ["Hidden waterfall swim", "Chocolate-making workshop", "Coffee farm tour", "Birdwatching"],
+      tip: "One of our most complete tours and best value for money. The gourmet lunch is a highlight.",
+    },
+    {
+      id: "velero-tayrona",
+      name: "Sailing Boat Tour — Tayrona Beach",
+      tagline: "Sail the Caribbean with paddleboard & snorkel included",
+      description:
+        "A spectacular way to experience Tayrona National Park: from the sea. You'll set sail from La Marina with everything included — water, fruits, snacks, lunch, paddleboard and snorkel equipment. The route passes Bahía Concha and the park's beaches. The sunset from the deck is unforgettable.",
+      duration: "1 day",
+      difficulty: "Easy",
+      distance: "Departs from La Marina",
+      price: "COP 236,000",
+      priceNote: "Lunch + water + fruits + snorkel + paddleboard included. Taxi to La Marina not included.",
+      img: "https://images.unsplash.com/photo-1439405326-8b4278be4485?w=1200&auto=format&fit=crop&q=80",
+      highlights: ["Sailing boat day trip", "Bahía Concha from the sea", "Paddleboard + snorkel gear", "Lunch + snacks included"],
+      tip: "Taxi from the hostel to La Marina costs around COP 15,000. We can help you coordinate it.",
+    },
+    {
+      id: "buceo",
+      name: "PADI Diving",
+      tagline: "Two dives with a certified bilingual instructor",
+      description:
+        "Dive into the Colombian Caribbean with a certified bilingual PADI instructor. The tour includes two dives to a maximum depth of 30 feet, full equipment, boat transport from La Marina, water, a snack and underwater photos. Small groups for a more personal and safe experience.",
+      duration: "Half day",
+      difficulty: "Moderate",
+      distance: "Departs from La Marina",
+      price: "COP 230,000",
+      priceNote: "Fundive (2 dives). PADI Minicourse: COP 280,000. Marine Port entry (COP 11,000) not included.",
+      img: "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=1200&auto=format&fit=crop&q=80",
+      highlights: ["2 dives (max 30 feet)", "Full equipment included", "Bilingual PADI instructor", "Underwater photos"],
+      tip: "No prior experience needed for the Fundive. The PADI Minicourse includes your certification.",
     },
     {
       id: "ciudad-perdida",
-      name: "Lost City — The Legendary Trek",
-      tagline: "4 to 6 days in the Sierra Nevada jungle",
+      name: "Lost City Trek — The Legendary Route",
+      tagline: "4 or 5 days deep in the Sierra Nevada jungle",
       description:
-        "One of the most epic experiences in South America. Walking 4-6 days through dense jungle to reach the indigenous city of Teyuna, built over 650 years ago. Only the strong make it — and it's worth every step. Can only be done with authorized operators. We connect you with our trusted agency.",
-      duration: "4-6 days",
+        "One of the most epic experiences in South America. Trek 4 or 5 days through dense jungle to reach the ancient indigenous city of Teyuna, built over 650 years ago. The price covers absolutely everything: transport to the trailhead, accommodation in beds with mosquito nets, all meals (veggie/vegan option available), purified water, fruits, snacks and a bilingual guide.",
+      duration: "4 or 5 days",
       difficulty: "Hard",
       distance: "Sierra Nevada de Santa Marta",
-      price: "COP 1,200,000",
-      priceNote: "All inclusive (guides, meals, camping)",
+      price: "COP 2,150,000",
+      priceNote: "All inclusive: transport, accommodation, all meals, water, bilingual guide.",
       img: "https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=1200&auto=format&fit=crop&q=80",
       highlights: [
-        "Teyuna City (650 years of history)",
-        "Trek through virgin jungle",
-        "Rivers and waterfalls along the way",
-        "Kogi indigenous communities",
+        "Teyuna City (650+ years of history)",
+        "Accommodation + all meals included",
+        "Purified water + snacks",
+        "Certified bilingual guide",
       ],
-      tip: "You need to be in good physical shape. Not suitable for everyone. Please consult before booking.",
-    },
-    {
-      id: "taganga",
-      name: "Taganga — Diving & Sunset",
-      tagline: "Fishing village with incredible views",
-      description:
-        "15 min from Santa Marta, Taganga is a small fishing village famous for accessible and affordable diving. The bay is calm, the fish is fresh and the Caribbean sunset is one of the most beautiful on the coast. There's also kayaking and snorkeling.",
-      duration: "Half day — full day",
-      difficulty: "Easy",
-      distance: "4 km from Santa Marta",
-      price: "COP 50,000",
-      priceNote: "Transport + basic snorkel",
-      img: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&auto=format&fit=crop&q=80",
-      highlights: ["Baptism dive", "Snorkeling", "Kayaking", "Fresh fish at sunset"],
-      tip: "If you want to get your diving license, Taganga is one of the cheapest places in the world to do it.",
-    },
-    {
-      id: "playa-blanca",
-      name: "Playa Blanca — Unfiltered Paradise",
-      tagline: "Turquoise waters and movie-scene white sand",
-      description:
-        "The jewel of the Samario Caribbean. Crystal clear waters between blue and green, white sand and a relaxed atmosphere that makes you want to stay forever. Reached by boat from Taganga or on an organized tour. Perfect for a day with no plans — just beach, sun and a cold drink.",
-      duration: "1 day",
-      difficulty: "Easy",
-      distance: "Boat access from Taganga",
-      price: "COP 100,000",
-      priceNote: "Transport + boat included",
-      img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
-      highlights: ["Turquoise waters", "White sand", "Snorkeling", "Relaxed atmosphere"],
-      tip: "Bring your own lunch or buy a grilled fish from a local stand. Much tastier and cheaper.",
+      tip: "Veggie/vegan option available. You need good physical fitness — check with us before booking.",
     },
   ],
 };
@@ -217,8 +307,8 @@ export default function ToursPage() {
         {tourList.map((tour, idx) => {
           const waMsg = encodeURIComponent(
             lang === "es"
-              ? `Hola! Me interesa el tour de ${tour.name}. ¿Tienen disponibilidad?`
-              : `Hi! I'm interested in the ${tour.name} tour. Do you have availability?`
+              ? `Hola! Me gustaría obtener más información sobre el tour: ${tour.name}.`
+              : `Hi! I'd like to get more information about the tour: ${tour.name}.`
           );
 
           return (
@@ -267,21 +357,15 @@ export default function ToursPage() {
                   <p className="font-inter text-sm text-grafito">{tour.tip}</p>
                 </div>
 
-                <div className="flex items-center gap-4 flex-wrap">
-                  <div>
-                    <p className="font-syne font-bold text-2xl text-terracota">{tour.price}</p>
-                    <p className="font-inter text-xs text-grafito-muted">{tour.priceNote}</p>
-                  </div>
-                  <a
-                    href={`${waBase}${waMsg}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-primary"
-                  >
-                    <MessageCircle size={16} />
-                    {lang === "es" ? "Consultar por WhatsApp" : "Ask on WhatsApp"}
-                  </a>
-                </div>
+                <a
+                  href={`${waBase}${waMsg}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary"
+                >
+                  <MessageCircle size={16} />
+                  {lang === "es" ? "Más Información" : "More Info"}
+                </a>
               </div>
             </div>
           );
