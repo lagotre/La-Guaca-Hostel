@@ -24,6 +24,26 @@ const tours = {
       tip: "Lleva protector solar, agua y ropa que puedas mojar. Hay restaurantes en el parque para el almuerzo.",
     },
     {
+      id: "ciudad-perdida",
+      name: "Ciudad Perdida — El Trek Legendario",
+      tagline: "4 o 5 días en la selva de la Sierra Nevada",
+      description:
+        "Una de las experiencias más épicas de Sudamérica. Caminar 4 o 5 días por selva cerrada hasta llegar a la ciudad indígena Teyuna, construida hace más de 650 años. El precio incluye absolutamente todo: transporte al inicio del trek, alojamiento en camas con mosquitero, todas las comidas (opción vegana/vegetariana disponible), agua purificada, frutas, snacks y guía bilingüe.",
+      duration: "4 o 5 días",
+      difficulty: "Difícil",
+      distance: "Sierra Nevada de Santa Marta",
+      price: "COP 2.150.000",
+      priceNote: "Todo incluido: transporte, alojamiento, comidas, agua, guía bilingüe.",
+      img: "/tour-ciudad-perdida.jpg",
+      highlights: [
+        "Ciudad Teyuna (más de 650 años)",
+        "Alojamiento + todas las comidas",
+        "Agua purificada + snacks",
+        "Guía bilingüe certificado",
+      ],
+      tip: "Opción vegana y vegetariana disponible. Necesitas buena condición física — consulta con nosotros antes de reservar.",
+    },
+    {
       id: "playa-cristal",
       name: "Playa Cristal",
       tagline: "El mejor punto de snorkel del Caribe colombiano",
@@ -113,26 +133,6 @@ const tours = {
       highlights: ["2 inmersiones (máx. 9 metros)", "Equipo de buceo incluido", "Instructor PADI bilingüe", "Fotos bajo el agua"],
       tip: "No necesitas experiencia previa para el Fundive. Para el Minicurso PADI recibirás tu certificación.",
     },
-    {
-      id: "ciudad-perdida",
-      name: "Ciudad Perdida — El Trek Legendario",
-      tagline: "4 o 5 días en la selva de la Sierra Nevada",
-      description:
-        "Una de las experiencias más épicas de Sudamérica. Caminar 4 o 5 días por selva cerrada hasta llegar a la ciudad indígena Teyuna, construida hace más de 650 años. El precio incluye absolutamente todo: transporte al inicio del trek, alojamiento en camas con mosquitero, todas las comidas (opción vegana/vegetariana disponible), agua purificada, frutas, snacks y guía bilingüe.",
-      duration: "4 o 5 días",
-      difficulty: "Difícil",
-      distance: "Sierra Nevada de Santa Marta",
-      price: "COP 2.150.000",
-      priceNote: "Todo incluido: transporte, alojamiento, comidas, agua, guía bilingüe.",
-      img: "/tour-ciudad-perdida.jpg",
-      highlights: [
-        "Ciudad Teyuna (más de 650 años)",
-        "Alojamiento + todas las comidas",
-        "Agua purificada + snacks",
-        "Guía bilingüe certificado",
-      ],
-      tip: "Opción vegana y vegetariana disponible. Necesitas buena condición física — consulta con nosotros antes de reservar.",
-    },
   ],
   en: [
     {
@@ -149,6 +149,26 @@ const tours = {
       img: "/tour-tayrona.jpg",
       highlights: ["Round-trip transport", "Entrance + insurance included", "Spanish/English guide", "Available every day"],
       tip: "Bring sunscreen, water and clothes you can get wet. There are restaurants inside the park for lunch.",
+    },
+    {
+      id: "ciudad-perdida",
+      name: "Lost City Trek — The Legendary Route",
+      tagline: "4 or 5 days deep in the Sierra Nevada jungle",
+      description:
+        "One of the most epic experiences in South America. Trek 4 or 5 days through dense jungle to reach the ancient indigenous city of Teyuna, built over 650 years ago. The price covers absolutely everything: transport to the trailhead, accommodation in beds with mosquito nets, all meals (veggie/vegan option available), purified water, fruits, snacks and a bilingual guide.",
+      duration: "4 or 5 days",
+      difficulty: "Hard",
+      distance: "Sierra Nevada de Santa Marta",
+      price: "COP 2,150,000",
+      priceNote: "All inclusive: transport, accommodation, all meals, water, bilingual guide.",
+      img: "/tour-ciudad-perdida.jpg",
+      highlights: [
+        "Teyuna City (650+ years of history)",
+        "Accommodation + all meals included",
+        "Purified water + snacks",
+        "Certified bilingual guide",
+      ],
+      tip: "Veggie/vegan option available. You need good physical fitness — check with us before booking.",
     },
     {
       id: "playa-cristal",
@@ -239,26 +259,6 @@ const tours = {
       img: "/tour-buceo.png",
       highlights: ["2 dives (max 30 feet)", "Full equipment included", "Bilingual PADI instructor", "Underwater photos"],
       tip: "No prior experience needed for the Fundive. The PADI Minicourse includes your certification.",
-    },
-    {
-      id: "ciudad-perdida",
-      name: "Lost City Trek — The Legendary Route",
-      tagline: "4 or 5 days deep in the Sierra Nevada jungle",
-      description:
-        "One of the most epic experiences in South America. Trek 4 or 5 days through dense jungle to reach the ancient indigenous city of Teyuna, built over 650 years ago. The price covers absolutely everything: transport to the trailhead, accommodation in beds with mosquito nets, all meals (veggie/vegan option available), purified water, fruits, snacks and a bilingual guide.",
-      duration: "4 or 5 days",
-      difficulty: "Hard",
-      distance: "Sierra Nevada de Santa Marta",
-      price: "COP 2,150,000",
-      priceNote: "All inclusive: transport, accommodation, all meals, water, bilingual guide.",
-      img: "/tour-ciudad-perdida.jpg",
-      highlights: [
-        "Teyuna City (650+ years of history)",
-        "Accommodation + all meals included",
-        "Purified water + snacks",
-        "Certified bilingual guide",
-      ],
-      tip: "Veggie/vegan option available. You need good physical fitness — check with us before booking.",
     },
   ],
 };
