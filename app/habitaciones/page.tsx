@@ -10,19 +10,16 @@ const rooms = {
   es: [
     {
       id: "dorm-mixed",
-      name: "Dormitorio Mixto",
+      name: "Dormitorios Mixtos",
       description:
-        "La opción perfecta para el viajero social. Conoce gente de todo el mundo, comparte experiencias y ahorra para gastar en lo que importa: explorar.",
-      capacity: "6-8 personas",
+        "La opción perfecta para el viajero social. Comparte el espacio con gente de todo el mundo, conoce nuevas historias y ahorra para lo que importa: explorar Santa Marta y sus alrededores. Disponible en versión de 6 y 8 personas.",
+      capacity: "6 u 8 personas",
       priceUSD: "USD 13",
       priceCOP: "COP 55.000",
-      images: [
-        "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=900&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&auto=format&fit=crop&q=80",
-      ],
+      images: ["/room-dorm.jpg", "/room-pool.jpg"],
       amenities: [
         "Camas literas con colchón premium",
-        "Taquilla con llave (bring your lock)",
+        "Taquilla con llave incluida",
         "Ventilador",
         "Baño compartido (2 personas por baño)",
         "Desayuno gratuito incluido",
@@ -35,48 +32,41 @@ const rooms = {
       tagColor: "bg-terracota",
     },
     {
-      id: "dorm-female",
-      name: "Dormitorio Femenino",
+      id: "familia-amigos",
+      name: "Habitaciones Familia o Amigos",
       description:
-        "Espacio seguro y relajado solo para viajeras. Mismas comodidades que el dorm mixto, con la tranquilidad de un ambiente exclusivo para mujeres.",
-      capacity: "4-6 personas",
-      priceUSD: "USD 14",
-      priceCOP: "COP 60.000",
-      images: [
-        "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=900&auto=format&fit=crop&q=80",
-      ],
+        "Ideal para familias o grupos de amigos que viajan juntos. Espacio amplio y privado con cama doble y literas, baño propio y todas las comodidades del hostal. La solución perfecta para grupos de hasta 4 personas que quieren su propio espacio.",
+      capacity: "Hasta 4 personas",
+      priceUSD: "USD 55",
+      priceCOP: "COP 230.000",
+      images: ["/room-familia.jpg", "/room-pool.jpg"],
       amenities: [
-        "Solo para mujeres",
-        "Camas literas con colchón premium",
-        "Taquilla con llave",
-        "Ventilador",
-        "Baño compartido (privado del dorm)",
+        "1 cama doble + 1 litera (2 camas individuales)",
+        "Baño privado",
+        "Aire acondicionado",
+        "Armario",
         "Desayuno gratuito incluido",
         "WiFi fibra óptica",
         "Acceso a piscina jacuzzi",
+        "Área social 24h",
       ],
-      tag: "Solo mujeres",
+      tag: "Grupos y familias",
       tagColor: "bg-selva",
     },
     {
       id: "private-double",
-      name: "Habitación Privada Doble",
+      name: "Habitaciones Privadas Doble",
       description:
-        "Toda la vibra del hostal con la privacidad de tu propio espacio. Cama matrimonial, AC y baño privado. Para quienes quieren lo mejor de los dos mundos.",
+        "Toda la vibra del hostal con la privacidad de tu propio espacio. Cama matrimonial, aire acondicionado y baño privado con estilo. Para parejas o viajeros que quieren lo mejor de los dos mundos.",
       capacity: "2 personas",
       priceUSD: "USD 38",
       priceCOP: "COP 160.000",
-      images: [
-        "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=900&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&auto=format&fit=crop&q=80",
-      ],
+      images: ["/room-doble.jpg", "/room-bathroom.jpg"],
       amenities: [
         "Cama doble matrimonial",
         "Aire acondicionado",
         "Baño privado con ducha caliente",
         "Armario",
-        "Escritorio de trabajo",
         "Desayuno gratuito incluido",
         "WiFi fibra óptica",
         "Acceso a piscina jacuzzi",
@@ -87,16 +77,13 @@ const rooms = {
     },
     {
       id: "private-twin",
-      name: "Habitación Privada Twin",
+      name: "Habitaciones Privadas Twin",
       description:
-        "Perfecta para dos amigos o viajeros que prefieren camas separadas. Mismas comodidades que la doble con dos camas individuales.",
+        "Perfecta para dos amigos o compañeros de viaje que prefieren camas separadas. Mismas comodidades que la doble — aire acondicionado, baño privado y desayuno incluido — con dos camas individuales.",
       capacity: "2 personas",
       priceUSD: "USD 40",
       priceCOP: "COP 170.000",
-      images: [
-        "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=900&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=900&auto=format&fit=crop&q=80",
-      ],
+      images: ["/room-twin.jpg", "/room-bathroom.jpg"],
       amenities: [
         "2 camas individuales",
         "Aire acondicionado",
@@ -113,19 +100,16 @@ const rooms = {
   en: [
     {
       id: "dorm-mixed",
-      name: "Mixed Dorm",
+      name: "Mixed Dorms",
       description:
-        "The perfect option for the social traveler. Meet people from around the world, share experiences and save to spend on what matters: exploring.",
-      capacity: "6-8 people",
+        "The perfect option for the social traveler. Share the space with people from all over the world, discover new stories and save for what matters: exploring Santa Marta and beyond. Available in 6 and 8-bed configurations.",
+      capacity: "6 or 8 people",
       priceUSD: "USD 13",
       priceCOP: "COP 55,000",
-      images: [
-        "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=900&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&auto=format&fit=crop&q=80",
-      ],
+      images: ["/room-dorm.jpg", "/room-pool.jpg"],
       amenities: [
         "Bunk beds with premium mattress",
-        "Locker with key (bring your lock)",
+        "Locker with key included",
         "Fan",
         "Shared bathroom (2 guests per bathroom)",
         "Free breakfast included",
@@ -138,48 +122,41 @@ const rooms = {
       tagColor: "bg-terracota",
     },
     {
-      id: "dorm-female",
-      name: "Female Only Dorm",
+      id: "familia-amigos",
+      name: "Family or Friends Rooms",
       description:
-        "Safe and relaxed space for female travelers only. Same amenities as the mixed dorm with the peace of mind of a women-only environment.",
-      capacity: "4-6 people",
-      priceUSD: "USD 14",
-      priceCOP: "COP 60,000",
-      images: [
-        "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=900&auto=format&fit=crop&q=80",
-      ],
+        "Ideal for families or groups of friends traveling together. Spacious private room with a double bed and bunk beds, private bathroom and all hostel amenities. The perfect solution for groups of up to 4 who want their own space.",
+      capacity: "Up to 4 people",
+      priceUSD: "USD 55",
+      priceCOP: "COP 230,000",
+      images: ["/room-familia.jpg", "/room-pool.jpg"],
       amenities: [
-        "Women only",
-        "Bunk beds with premium mattress",
-        "Locker with key",
-        "Fan",
-        "Shared bathroom (private to dorm)",
+        "1 double bed + 1 bunk bed (2 single beds)",
+        "Private bathroom",
+        "Air conditioning",
+        "Wardrobe",
         "Free breakfast included",
         "Fiber optic WiFi",
         "Jacuzzi pool access",
+        "Social area 24h",
       ],
-      tag: "Women only",
+      tag: "Groups & families",
       tagColor: "bg-selva",
     },
     {
       id: "private-double",
-      name: "Private Double Room",
+      name: "Private Double Rooms",
       description:
-        "All the hostel vibe with the privacy of your own space. Double bed, AC and private bathroom. For those who want the best of both worlds.",
+        "All the hostel vibe with the privacy of your own space. Double bed, air conditioning and a stylish private bathroom. For couples or travelers who want the best of both worlds.",
       capacity: "2 people",
       priceUSD: "USD 38",
       priceCOP: "COP 160,000",
-      images: [
-        "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=900&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&auto=format&fit=crop&q=80",
-      ],
+      images: ["/room-doble.jpg", "/room-bathroom.jpg"],
       amenities: [
         "Double bed",
         "Air conditioning",
         "Private bathroom with hot shower",
         "Wardrobe",
-        "Work desk",
         "Free breakfast included",
         "Fiber optic WiFi",
         "Jacuzzi pool access",
@@ -190,16 +167,13 @@ const rooms = {
     },
     {
       id: "private-twin",
-      name: "Private Twin Room",
+      name: "Private Twin Rooms",
       description:
-        "Perfect for two friends or travelers who prefer separate beds. Same amenities as the double with two single beds.",
+        "Perfect for two friends or travel companions who prefer separate beds. Same amenities as the double — air conditioning, private bathroom and breakfast included — with two single beds.",
       capacity: "2 people",
       priceUSD: "USD 40",
       priceCOP: "COP 170,000",
-      images: [
-        "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=900&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=900&auto=format&fit=crop&q=80",
-      ],
+      images: ["/room-twin.jpg", "/room-bathroom.jpg"],
       amenities: [
         "2 single beds",
         "Air conditioning",
@@ -225,7 +199,7 @@ export default function HabitacionesPage() {
       <section className="relative h-64 md:h-80 flex items-end pb-10 px-4 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1600&auto=format&fit=crop&q=80"
+            src="/room-twin.jpg"
             alt="Habitaciones La Guaca"
             fill
             priority
@@ -297,21 +271,15 @@ export default function HabitacionesPage() {
                 ))}
               </ul>
 
-              <div className="flex items-center gap-4 flex-wrap">
-                <div>
-                  <p className="font-syne font-bold text-3xl text-terracota">{room.priceUSD}</p>
-                  <p className="font-inter text-xs text-grafito-muted">{room.priceCOP} · {lang === "es" ? "por noche" : "per night"}</p>
-                </div>
-                <a
-                  href={BOOK_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary"
-                >
-                  {lang === "es" ? "Reservar esta habitación" : "Book this room"}
-                  <ChevronRight size={16} />
-                </a>
-              </div>
+              <a
+                href={BOOK_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
+                {lang === "es" ? "Reservar" : "Book now"}
+                <ChevronRight size={16} />
+              </a>
             </div>
           </div>
         ))}

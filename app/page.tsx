@@ -68,11 +68,11 @@ export default function HomePage() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1800&auto=format&fit=crop&q=80"
-            alt="La Guaca Hostel piscina"
+            src="/hero-recepcion.jpg"
+            alt="La Guaca Hostel recepción"
             fill
             priority
-            className="object-cover"
+            className="object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-grafito/70 via-grafito/40 to-grafito/80" />
         </div>
@@ -241,9 +241,10 @@ export default function HomePage() {
             const Icon = ICON_MAP[svc.icon] || Compass;
             const isPrimary = i < 4;
             return (
-              <div
+              <Link
                 key={svc.label}
-                className={`rounded-card p-5 flex flex-col items-center text-center gap-3 ${
+                href="/espacios"
+                className={`rounded-card p-5 flex flex-col items-center text-center gap-3 transition-transform hover:scale-105 duration-200 ${
                   isPrimary
                     ? "bg-selva text-white"
                     : "bg-white text-grafito border border-crema-dark"
@@ -253,7 +254,7 @@ export default function HomePage() {
                 <p className={`font-syne font-semibold text-sm ${isPrimary ? "text-white" : "text-grafito"}`}>
                   {svc.label}
                 </p>
-              </div>
+              </Link>
             );
           })}
         </div>
@@ -431,9 +432,8 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div className="p-5">
-                  <h3 className="font-syne font-bold text-lg text-grafito mb-1">{tour.name}</h3>
-                  <p className="font-syne font-semibold text-terracota mb-4">{tour.price}</p>
-                  <a
+                  <h3 className="font-syne font-bold text-lg text-grafito mb-4">{tour.name}</h3>
+                  <
                     href={waUrl}
                     target="_blank"
                     rel="noopener noreferrer"

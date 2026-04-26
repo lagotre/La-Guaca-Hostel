@@ -24,6 +24,7 @@ export default function Navbar() {
   const links = [
     { href: "/habitaciones", label: t.rooms },
     { href: "/tours", label: t.tours },
+    { href: "/espacios", label: t.spaces },
     { href: "/ubicacion", label: t.location },
     { href: "/contacto", label: t.contact },
   ];
@@ -41,10 +42,10 @@ export default function Navbar() {
             <Image
               src="/logo-horizontal.png"
               alt="La Guaca Hostel"
-              width={180}
-              height={56}
+              width={270}
+              height={84}
               priority
-              className="h-12 w-auto object-contain drop-shadow-sm"
+              className="h-[72px] w-auto object-contain drop-shadow-sm"
             />
           </Link>
 
