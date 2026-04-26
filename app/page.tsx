@@ -433,7 +433,7 @@ export default function HomePage() {
                 </div>
                 <div className="p-5">
                   <h3 className="font-syne font-bold text-lg text-grafito mb-4">{tour.name}</h3>
-                  <
+                  <a
                     href={waUrl}
                     target="_blank"
                     rel="noopener noreferrer"
