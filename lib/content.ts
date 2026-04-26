@@ -86,13 +86,13 @@ export const content = {
       heading: "Todo lo que necesitas",
       items: [
         { icon: "Waves", label: "Piscina Jacuzzi" },
-        { icon: "Coffee", label: "Desayuno gratis" },
+        { icon: "Coffee", label: "Desayuno incluido" },
         { icon: "Wifi", label: "Fibra óptica" },
         { icon: "Monitor", label: "Coworking" },
         { icon: "Shirt", label: "Lavandería" },
         { icon: "Car", label: "Taxi al aeropuerto" },
         { icon: "Shield", label: "Consigna de equipaje" },
-        { icon: "Users", label: "Área social 24h" },
+        { icon: "Waves", label: "Bar y Restaurante" },
       ],
     },
     destinations: {
@@ -236,7 +236,7 @@ export const content = {
         },
         {
           icon: "Coffee",
-          title: "Free Breakfast",
+          title: "Breakfast Included",
           desc: "Start your day with energy. Homemade breakfast included for all guests.",
         },
         {
@@ -290,13 +290,13 @@ export const content = {
       heading: "Everything You Need",
       items: [
         { icon: "Waves", label: "Jacuzzi Pool" },
-        { icon: "Coffee", label: "Free Breakfast" },
+        { icon: "Coffee", label: "Breakfast Included" },
         { icon: "Wifi", label: "Fiber Optic WiFi" },
         { icon: "Monitor", label: "Coworking Space" },
         { icon: "Shirt", label: "Laundry" },
         { icon: "Car", label: "Airport Taxi" },
         { icon: "Shield", label: "Luggage Storage" },
-        { icon: "Users", label: "Social Area 24h" },
+        { icon: "Waves", label: "Bar & Restaurant" },
       ],
     },
     destinations: {

@@ -209,8 +209,8 @@ export default function UbicacionPage() {
                 </p>
                 <p className="font-inter text-white/70 text-sm">
                   {lang === "es"
-                    ? "Calle X #Y-Z, Barrio Bavaria, Santa Marta, Magdalena, Colombia"
-                    : "Calle X #Y-Z, Bavaria Neighborhood, Santa Marta, Magdalena, Colombia"}
+                    ? "Cra. 8 No. 27 – 75, Barrio Bavaria, Santa Marta, Colombia"
+                    : "Cra. 8 No. 27 – 75, Bavaria Neighborhood, Santa Marta, Colombia"}
                 </p>
               </div>
             </div>

@@ -197,10 +197,6 @@ export default function HomePage() {
                         <Users size={12} /> {room.capacity}
                       </p>
                     </div>
-                    <div className="text-right">
-                      <p className="font-syne font-bold text-terracota text-lg">{room.priceUSD}</p>
-                      <p className="font-inter text-xs text-grafito-muted">{t.rooms.night}</p>
-                    </div>
                   </div>
                   <div className="flex flex-wrap gap-1.5 mb-4">
                     {room.amenities.map((a) => (
@@ -384,6 +380,52 @@ export default function HomePage() {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── AMBIENTE & SERVICIOS TEASER ─── */}
+      <section className="py-20 lg:py-28 bg-crema px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="font-inter text-sm uppercase tracking-widest text-terracota mb-3">
+              {lang === "es" ? "El hostal" : "The hostel"}
+            </p>
+            <h2 className="section-heading">
+              {lang === "es" ? "Ambiente & Servicios" : "Spaces & Services"}
+            </h2>
+            <p className="font-inter text-grafito-muted mt-3 max-w-lg mx-auto">
+              {lang === "es"
+                ? "Piscina jacuzzi, bar, cocina comunitaria, coworking y mucho más."
+                : "Jacuzzi pool, bar, community kitchen, coworking and much more."}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+            {[
+              { src: "/svc-piscina.jpg", label: lang === "es" ? "Piscina Jacuzzi" : "Jacuzzi Pool" },
+              { src: "/svc-bar.jpg", label: "Bar" },
+              { src: "/svc-social.jpg", label: lang === "es" ? "Espacios Sociales" : "Social Spaces" },
+              { src: "/svc-restaurante.jpg", label: "Don Carlos" },
+            ].map((item) => (
+              <Link key={item.src} href="/espacios" className="relative h-40 md:h-56 rounded-card overflow-hidden group">
+                <Image
+                  src={item.src}
+                  alt={item.label}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-grafito/70 to-transparent" />
+                <p className="absolute bottom-3 left-3 font-syne font-semibold text-sm text-white">{item.label}</p>
+              </Link>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link href="/espacios" className="btn-primary text-sm">
+              {lang === "es" ? "Ver todos los servicios" : "See all services"}
+              <ChevronRight size={16} />
+            </Link>
           </div>
         </div>
       </section>
