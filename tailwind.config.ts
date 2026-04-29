@@ -10,9 +10,9 @@ const config: Config = {
     extend: {
       colors: {
         terracota: {
-          DEFAULT: "#D4522A",
-          light: "#E8734D",
-          dark: "#B03D18",
+          DEFAULT: "#E05A2B",
+          light: "#F0774D",
+          dark: "#C04020",
         },
         selva: {
           DEFAULT: "#2D6A4F",
@@ -23,6 +23,11 @@ const config: Config = {
           DEFAULT: "#F4C842",
           light: "#F9DC7A",
           dark: "#D4A820",
+        },
+        caribe: {
+          DEFAULT: "#0096C7",
+          light: "#48CAE4",
+          dark: "#005F73",
         },
         crema: {
           DEFAULT: "#FAF6EF",

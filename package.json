@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:export": "mv app/studio app/_studio_bak && next build; mv app/_studio_bak app/studio",
     "start": "next start",
     "lint": "next lint"
   },

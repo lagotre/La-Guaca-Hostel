@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Raleway, Lato } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
 import Navbar from "@/components/Navbar";
@@ -61,9 +60,7 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${raleway.variable} ${lato.variable}`}>
       <head>
-        <Script
-          id="gtm-script"
-          strategy="beforeInteractive"
+        <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

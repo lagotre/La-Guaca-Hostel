@@ -23,9 +23,9 @@ export default function Footer() {
               <Image
                 src="/logo-cuadrado.png"
                 alt="La Guaca Hostel"
-                width={180}
-                height={180}
-                className="w-[168px] h-auto object-contain"
+                width={225}
+                height={225}
+                className="w-[210px] h-auto object-contain"
               />
             </Link>
             <p className="font-inter text-sm text-white/60 leading-relaxed mb-5">
