@@ -196,7 +196,7 @@ export const content = {
     footer: {
       address: "Cra. 8 No. 27 – 75 Barrio Bavaria, Santa Marta, Colombia",
       phone: "+57 3046537134",
-      email: "ekuairasas@gmail.com",
+      email: "info@laguacahostel.com",
       rights: "La Guaca Hostel. Todos los derechos reservados.",
     },
     cta: {
@@ -400,7 +400,7 @@ export const content = {
     footer: {
       address: "Cra. 8 No. 27 – 75 Bavaria Neighborhood, Santa Marta, Colombia",
       phone: "+57 3046537134",
-      email: "ekuairasas@gmail.com",
+      email: "info@laguacahostel.com",
       rights: "La Guaca Hostel. All rights reserved.",
     },
     cta: {

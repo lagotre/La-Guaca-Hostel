@@ -85,18 +85,23 @@ export default function Footer() {
               {lang === "es" ? "Destinos" : "Destinations"}
             </p>
             <ul className="space-y-2">
-              {["Parque Tayrona", "Playa Cristal", "Minca", "Ciudad Perdida", "Buceo PADI", "Velero Tayrona"].map(
-                (d) => (
-                  <li key={d}>
-                    <Link
-                      href="/tours"
-                      className="font-inter text-sm text-white/70 hover:text-white transition-colors"
-                    >
-                      {d}
-                    </Link>
-                  </li>
-                )
-              )}
+              {[
+                { label: "Parque Tayrona", slug: "parque-tayrona" },
+                { label: "Playa Cristal", slug: "playa-cristal" },
+                { label: "Minca", slug: "minca-tour-dia-completo" },
+                { label: "Ciudad Perdida", slug: "ciudad-perdida-trek" },
+                { label: "Buceo PADI", slug: "buceo-padi-santa-marta" },
+                { label: "Velero Tayrona", slug: "velero-tayrona" },
+              ].map((d) => (
+                <li key={d.slug}>
+                  <Link
+                    href={`/tours/${d.slug}`}
+                    className="font-inter text-sm text-white/70 hover:text-white transition-colors"
+                  >
+                    {d.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 

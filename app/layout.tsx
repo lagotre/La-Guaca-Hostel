@@ -21,17 +21,21 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "La Guaca Hostel | Santa Marta, Colombia",
+  title: {
+    default: "La Guaca Hostel · Santa Marta, Colombia",
+    template: "%s",
+  },
   description:
-    "Tu base en el Caribe colombiano. Piscina jacuzzi, desayuno incluido, tours a Tayrona, Minca y Ciudad Perdida. Reserva directo y ahorra.",
+    "Hostel con piscina jacuzzi y desayuno incluido en Santa Marta. Base perfecta para Tayrona, Minca y Ciudad Perdida. Reserva directo y ahorra.",
   keywords: [
+    "hostel santa marta",
     "hostal santa marta",
-    "hostel colombia",
     "la guaca hostel",
-    "tayrona",
-    "minca",
-    "ciudad perdida",
-    "cartagena caribe",
+    "hostel santa marta jacuzzi",
+    "hostel santa marta con desayuno",
+    "tayrona tour",
+    "ciudad perdida trek",
+    "minca santa marta",
   ],
   icons: {
     icon: [
@@ -60,6 +64,7 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${raleway.variable} ${lato.variable}`}>
       <head>
+        {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -67,6 +72,113 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KKQWGQZD');`,
+          }}
+        />
+        {/* Schema: LodgingBusiness */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LodgingBusiness",
+              name: "La Guaca Hostel",
+              description:
+                "Hostel en Barrio Bavaria, Santa Marta, Colombia. Piscina jacuzzi, desayuno incluido, coworking con fibra óptica y tours organizados a Tayrona, Minca y Ciudad Perdida.",
+              url: "https://laguacahostel.com",
+              logo: "https://laguacahostel.com/logo-cuadrado.png",
+              image: "https://laguacahostel.com/hero-recepcion.jpg",
+              telephone: "+573046537134",
+              email: "info@laguacahostel.com",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Cra. 8 No. 27 – 75",
+                addressLocality: "Santa Marta",
+                addressRegion: "Magdalena",
+                addressCountry: "CO",
+              },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: 11.2408,
+                longitude: -74.2095,
+              },
+              priceRange: "$$",
+              amenityFeature: [
+                { "@type": "LocationFeatureSpecification", name: "Piscina Jacuzzi", value: true },
+                { "@type": "LocationFeatureSpecification", name: "Desayuno gratuito", value: true },
+                { "@type": "LocationFeatureSpecification", name: "WiFi fibra óptica", value: true },
+                { "@type": "LocationFeatureSpecification", name: "Coworking", value: true },
+                { "@type": "LocationFeatureSpecification", name: "Bar", value: true },
+                { "@type": "LocationFeatureSpecification", name: "Restaurante", value: true },
+                { "@type": "LocationFeatureSpecification", name: "Aire acondicionado", value: true },
+                { "@type": "LocationFeatureSpecification", name: "Lavandería", value: true },
+              ],
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "9.2",
+                bestRating: "10",
+                reviewCount: "500",
+                ratingCount: "500",
+              },
+              sameAs: [
+                "https://www.instagram.com/laguacahostel",
+                "https://www.facebook.com/laguacahostel",
+              ],
+              checkInTime: "14:00",
+              checkOutTime: "12:00",
+              petsAllowed: false,
+            }),
+          }}
+        />
+        {/* Schema: FAQPage */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: [
+                {
+                  "@type": "Question",
+                  name: "¿El desayuno está incluido en el precio?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Sí, todos los huéspedes de La Guaca Hostel reciben desayuno casero gratuito cada mañana, independientemente del tipo de habitación.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "¿Cómo llegar al hostel desde el aeropuerto?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "El aeropuerto Simón Bolívar está a solo 15 minutos del hostel. El taxi oficial cuesta entre COP 25.000 y 35.000. También coordinamos el taxi directamente desde el hostel.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "¿El hostel organiza tours a Parque Tayrona y Ciudad Perdida?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Sí, organizamos tours a Parque Tayrona, Ciudad Perdida Trek (4-5 días), Playa Cristal, Minca, Playa Cinto, buceo PADI y velero por Tayrona. Todos incluyen transporte y guía bilingüe.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "¿Tienen espacio de coworking?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Sí, tenemos un espacio de coworking con fibra óptica real, buena silla, buena iluminación y ambiente del hostal. Ideal para nómadas digitales y viajeros que trabajan remotamente.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "¿Cuál es la ventaja de reservar directo vs Hostelworld o Booking?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Reservando directamente en nuestro sistema obtienes el mejor precio garantizado, sin comisiones de intermediarios. También puedes coordinar llegada, tours y servicios directamente con nosotros.",
+                  },
+                },
+              ],
+            }),
           }}
         />
       </head>
