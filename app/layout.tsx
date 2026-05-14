@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     default: "La Guaca Hostel · Santa Marta, Colombia",
     template: "%s",
   },
+  verification: {
+    google: "UdFnIqu39TEdzf_828UuG_lZQJ8Ij3mz_9oUv3xb62U",
+  },
   description:
     "Hostel con piscina jacuzzi y desayuno incluido en Santa Marta. Base perfecta para Tayrona, Minca y Ciudad Perdida. Reserva directo y ahorra.",
   keywords: [
